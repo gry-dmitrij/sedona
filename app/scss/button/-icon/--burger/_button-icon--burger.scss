@@ -1,0 +1,14 @@
+.button-icon--burger {
+  width: 23px;
+  height: 21px;
+  display: flex;
+  &::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #81b3d2;
+    box-shadow: 0 9px 0 0 #81b3d2,
+                0 18px 0 0 #81b3d2;
+  }
+}

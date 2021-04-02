@@ -1,0 +1,23 @@
+.button-icon--close-btn {
+  width: 32px;
+  height: 32px;
+  display: block;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100%;
+
+    position: absolute;
+    top: 14px;
+    left: 0;
+    background-color: #fff;
+  }
+  &:before{
+    transform: rotate(45deg);
+  }
+  &:after{
+    transform: rotate(-45deg);
+  }
+}

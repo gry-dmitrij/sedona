@@ -1,0 +1,16 @@
+.nav-list__item {
+  margin: 0;
+  padding: 0;
+  display: block;
+  background-color: #81b3d2;
+  box-shadow: inset 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 2px 0 0 rgba(255, 255, 255, 0.2);
+  &:first-child {
+    box-shadow: none;
+  }
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active {
+    background-color: #5496bd;
+  }
+}

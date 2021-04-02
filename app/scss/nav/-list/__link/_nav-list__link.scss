@@ -1,0 +1,15 @@
+.nav-list__link {
+  margin: 0;
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 2.22;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  &:active {
+    color: rgba(255, 255, 255, .2);
+  }
+}

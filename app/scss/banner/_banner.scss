@@ -1,0 +1,16 @@
+.banner {
+  padding: 0;
+  height: 389px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e0edf5;
+  // background-image: url("../img/bg-intro-triangle-mobile.svg"),
+  //   url("../img/main-bg-mobile@1x.jpg");
+  // background-position: center bottom, center ;
+  // background-repeat: no-repeat, no-repeat;
+  // background-size:  768px 57px, 768px 389px;
+  background: center / 768px 389px no-repeat url("../img/main-bg-mobile@1x.jpg");
+}
