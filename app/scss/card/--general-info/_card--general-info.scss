@@ -1,12 +1,4 @@
 .card--general-info {
   background-color: #81b3d2;
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0px;
-
-    border: solid transparent;
-    border-bottom: 10px solid #000;
-  }
+  color: #fff;
 }

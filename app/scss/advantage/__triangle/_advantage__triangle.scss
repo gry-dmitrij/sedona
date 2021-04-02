@@ -1,6 +1,7 @@
 .advantage__triangle {
   padding: 39px 0 0;
   position: relative;
+  z-index: 1;
   &::before,
   &::after {
     content: "";
@@ -18,5 +19,6 @@
   &::after {
     bottom: -42px;
     background-image: url("../img/bg-triangle.svg");
+    z-index: -1;
   }
 }
