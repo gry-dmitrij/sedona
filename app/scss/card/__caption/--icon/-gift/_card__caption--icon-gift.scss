@@ -1,0 +1,9 @@
+.card__caption--icon-gift {
+  &::before {
+    width: 38px;
+    height: 36px;
+    top: -9px;
+    left: -47px;
+    background-image: url("../img/icon/icon-gift.svg");
+  }
+}

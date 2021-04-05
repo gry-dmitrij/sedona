@@ -1,0 +1,9 @@
+.card__caption--icon-house {
+  &::before {
+    width: 38px;
+    height: 36px;
+    top: -8px;
+    left: -49px;
+    background-image: url("../img/icon/icon-house.svg");
+  }
+}

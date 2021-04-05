@@ -1,0 +1,11 @@
+@function convert($value, $base, $unit){
+  @return ($value / ($value * 0 + 1)) / $base +$unit;
+}
+
+@function em($value, $base){
+  @return convert($value, $base, em);
+}
+
+@function rem($value, $base){
+  @return convert($value, $base, rem);
+}

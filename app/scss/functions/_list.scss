@@ -1,0 +1,7 @@
+@function list-add-val($list, $val){
+  $new-list: ();
+  @for $i from 1 through length($list){
+    $new-list: append($new-list, nth($list, $i) + $val);
+  }
+  @return $new-list;
+}

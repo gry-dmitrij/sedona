@@ -36,81 +36,78 @@
       <b class="advantage__caption">Седона — небольшой городок в аризоне, заслуживающий большего!</b>
       <p class="advantage__desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
-    <ul class="cards">
-      <li>
-        <ul class="cards">
-          <li class="card card--general-info">
-            <div>
-              <b>настоящий городок</b>
-              <span>№1</span>
-              <p>седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <img src="#" width="320" height="260" alt="Город Седона">
+    <ul class="cards page__cards">
+      <li class="card">
+        <div class="card__general card__general--padding-big">
+          <b class="card__caption">настоящий городок</b>
+          <span class="card__number">№1</span>
+          <p class="card__text">седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="card__img card__img--city"></div>
+        <ul class="cards page__advantage">
+          <li class="card card--advantage">
+            <span class="card__caption card__caption--icon card__caption--icon-house">жилье</span>
+            <p class="card__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="card card--advantage">
-            <span>жилье</span>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <span class="card__caption card__caption--icon card__caption--icon-gift">сувениры</span>
+            <p class="card__desc">Не только китайского, но и местного производства!</p>
           </li>
           <li class="card card--advantage">
-            <span>сувениры</span>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-          <li class="card card--advantage">
-            <span>еда</span>
-            <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <span class="card__caption card__caption--icon card__caption--icon-burger">еда</span>
+            <p class="card__desc">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
       </li>
-      <li>
-        <ul>
-          <li>
-            <div>
-              <b>там есть мост дьявола</b>
-              <span>№2</span>
-              <p>Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-            <img src="#" width="320" height="260" alt="Город Седона">
-          </li>
-          <li>
-            <span>небольшая площадь</span>
-            <span>№3</span>
-            <p>все интересные места находятся очень близко</p>
-          </li>
-          <li>
-            <span>красивая дорога</span>
-            <span>№4</span>
-            <p>ехать в седону из лас-вегаса
-              совсем не скучно!</p>
-          </li>
-          <li>
-            <span>мало туристов
-
-              —  —
-
-              Большинство едет в гранд каньон
-              и толпится там</span>
-            <span>№5</span>
-            <p>Большинство едет в гранд каньон и толпится там</p>
-          </li>
-        </ul>
+      <li class="card">
+          <div class="card__general">
+            <b class="card__caption">там есть мост дьявола</b>
+            <span class="card__number">№2</span>
+            <p class="card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+          <div class="card__img card__img--bridge"></div>
+      </li>
+      <li class="card card--no-image">
+        <span class="card__caption">небольшая площадь</span>
+        <span class="card__number">№3</span>
+        <p class="card__text">все интересные места находятся очень близко</p>
+      </li>
+      <li class="card card--no-image">
+        <span class="card__caption">красивая дорога</span>
+        <span class="card__number">№4</span>
+        <p class="card__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+      </li>
+      <li class="card card--no-image">
+        <span class="card__caption">мало туристов</span>
+        <span class="card__number">№5</span>
+        <p class="card__text">Большинство едет в гранд каньон и толпится там</p>
       </li>
     </ul>
   </section>
-  <section>
-    <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>
-    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    <button>найти гостиницу</button>
-    <img src="#" alt="карта">
+  <section class="hotel">
+    <h2 class="visually-hidden">Гостиницы</h2>
+    <b class="hotel__caption">ЗАИНТЕРЕСОВАЛИСЬ?</b>
+    <p class="hotel__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <button class="button button--big">найти гостиницу</button>
+  </section>
+  <section class="map">
+    <h2 class="visually-hidden">Карта</h2>
   </section>
 </main>
-<footer class="main-footer">
-  <p class="main-footer__hashtag">#visitsedona</p>
-  <ul class="main-footer__icons">
-    <li class="main-footer__icon"><a href="#" class="social-icon">twitter</a></li>
-    <li class="main-footer__icon"><a href="#" class="social-icon">facebook</a></li>
-    <li class="main-footer__icon"><a href="#" class="social-icon">youtube</a></li>
+<footer class="footer">
+  <p class="footer__hashtag">#visitsedona</p>
+  <ul class="footer__icons">
+    <li class="footer__icon">
+      <a  class="button button--social-icon button--twitter"><span class="visually-hidden">twitter</span></a>
+    </li>
+    <li class="footer__icon">
+      <a href="#" class="button button--social-icon button--facebook"><span class="visually-hidden">facebook</span></a>
+    </li>
+    <li class="footer__icon">
+      <a href="#" class="button button--social-icon button--youtube"><span class="visually-hidden">youtube</span></a>
+    </li>
   </ul>
-  <span class="main-footer__developer">Разработано</span>
+  <a href="#" class="footer__developer">Разработано</a>
 </footer>
 </body>
 </html>

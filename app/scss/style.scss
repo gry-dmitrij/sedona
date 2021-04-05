@@ -1,3 +1,4 @@
+@import "functions/**/*.scss";
 @import "general/**/*.scss";
 @import "fonts/**/*.scss";
 
@@ -19,9 +20,18 @@
 @import "close-btn/**/!(*__*|*--*).scss";
 @import "close-btn/**/*__!(*--*).scss";
 @import "close-btn/**/+(*--*).scss";
+@import "footer/**/!(*__*|*--*).scss";
+@import "footer/**/*__!(*--*).scss";
+@import "footer/**/+(*--*).scss";
+@import "hotel/**/!(*__*|*--*).scss";
+@import "hotel/**/*__!(*--*).scss";
+@import "hotel/**/+(*--*).scss";
 @import "main-header/**/!(*__*|*--*).scss";
 @import "main-header/**/*__!(*--*).scss";
 @import "main-header/**/+(*--*).scss";
+@import "map/**/!(*__*|*--*).scss";
+@import "map/**/*__!(*--*).scss";
+@import "map/**/+(*--*).scss";
 @import "nav/**/!(*__*|*--*).scss";
 @import "nav/**/*__!(*--*).scss";
 @import "nav/**/+(*--*).scss";

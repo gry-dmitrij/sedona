@@ -1,0 +1,20 @@
+.map {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  position: relative;
+  background: center / cover no-repeat;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    background: #81b4d4;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+}

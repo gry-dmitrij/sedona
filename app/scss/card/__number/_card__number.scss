@@ -1,0 +1,14 @@
+.card__number {
+  display: block;
+  margin-bottom: 15px;
+  &::before,
+  &::after {
+    content: '\2013';
+  }
+  &::after {
+    margin-left: 5px;
+  }
+  &::before {
+    margin-right: 5px;
+  }
+}

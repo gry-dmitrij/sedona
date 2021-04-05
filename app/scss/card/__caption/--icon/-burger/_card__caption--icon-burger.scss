@@ -1,0 +1,9 @@
+.card__caption--icon-burger {
+  &::before {
+    width: 38px;
+    height: 36px;
+    top: -5px;
+    left: -49px;
+    background-image: url("../img/icon/icon-burger.svg");
+  }
+}

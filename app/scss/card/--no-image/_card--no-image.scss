@@ -1,0 +1,21 @@
+.card--no-image {
+  padding: 27px 33px 29px;
+  position: relative;
+
+  background-color: #eee;
+  text-align: center;
+  &::before {
+    content: "";
+    display: block;
+    width: 86%;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    background: rgba(0, 0, 0, .1);
+  }
+  &:last-child::before{
+    display: none;
+  }
+}

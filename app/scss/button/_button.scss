@@ -1,0 +1,36 @@
+.button{
+  $base-local:null;
+  $font-size: null;
+  $line-height:null;
+  $base-local:16;
+  $padding-top-bottom: null;
+  $font-size: 18px !default;
+  $line-height: 40px !default;
+  $padding-top: 21px;
+  $padding-bottom: 18px;
+  $font-weight: bold;
+
+  min-width: 100px;
+  width: 100%;
+  display: block;
+  padding: rem($padding-top, $base-local) 15px rem($padding-bottom, $base-local);
+
+  font-size: rem($font-size, $base-local);
+  line-height: rem($line-height, $base-local);
+  font-weight: $font-weight;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: none;
+  color: #fff;
+  outline: none;
+  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  background-color: #81b3d2;
+  &:hover {
+    background-color: #669ec0;
+  }
+  &:active{
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);;
+  }
+}
