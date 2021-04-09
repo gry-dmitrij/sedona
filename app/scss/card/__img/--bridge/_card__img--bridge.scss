@@ -1,3 +1,8 @@
 .card__img--bridge {
   background-image: url("../img/photo-bridge-mobile@1x.jpg");
+
+  @media (min-width: $tablet-min-width) {
+    order: -1;
+    background-image: url("../img/photo-bridge-tablet@1x.jpg");
+  }
 }

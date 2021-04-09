@@ -1,3 +1,13 @@
 .card--advantage {
   padding: 27px 41px 0 69px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 33%;
+    padding-top: 165px;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 }

@@ -1,3 +1,7 @@
 .card__desc {
   margin: 7px 0 0;
+
+  @media (min-width: $tablet-min-width) {
+    text-align: center;
+  }
 }

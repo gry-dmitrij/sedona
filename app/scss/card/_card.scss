@@ -4,4 +4,9 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-min-width) {
+    width: 100%;
+    flex-flow: row wrap;
+  }
 }

@@ -3,4 +3,8 @@
   background-color: #81b3d2;
   color: #fff;
   text-align: center;
+
+  @media (min-width: $tablet-min-width) {
+    width: 33%;
+  }
 }

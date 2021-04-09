@@ -6,4 +6,13 @@
     left: -49px;
     background-image: url("../img/icon/icon-burger.svg");
   }
+
+  @media (min-width: $tablet-min-width) {
+    &:before {
+      width: 77px;
+      height: 68px;
+      top: -100px;
+      left: calc(50% - 77px / 2);
+    }
+  }
 }

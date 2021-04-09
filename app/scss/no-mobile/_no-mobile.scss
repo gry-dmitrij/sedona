@@ -1,0 +1,5 @@
+.no-mobile {
+    @media (max-width: $tablet-min-width - 1px) {
+      display: none;
+    }
+}

@@ -6,4 +6,13 @@
     left: -49px;
     background-image: url("../img/icon/icon-house.svg");
   }
+
+  @media (min-width: $tablet-min-width) {
+    &:before{
+      width: 75px;
+      height: 72px;
+      top: -100px;
+      left: calc(50% - 75px / 2);
+    }
+  }
 }

@@ -5,4 +5,8 @@
   flex-flow: column;
 
   list-style: none;
+
+  @media (min-width: $tablet-min-width) {
+    flex-flow: row wrap;
+  }
 }

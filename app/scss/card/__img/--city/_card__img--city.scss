@@ -1,3 +1,6 @@
 .card__img--city {
   background-image: url("../img/photo-city-mobile@1x.jpg");
+  @media (min-width: $tablet-min-width) {
+    background-image: url("../img/photo-city-tablet@1x.jpg");
+  }
 }

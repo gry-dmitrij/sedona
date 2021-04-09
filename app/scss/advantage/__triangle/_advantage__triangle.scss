@@ -21,4 +21,15 @@
     background-image: url("../img/bg-triangle.svg");
     z-index: -1;
   }
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    &::before {
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+    &::after {
+      display: none;
+    }
+  }
 }

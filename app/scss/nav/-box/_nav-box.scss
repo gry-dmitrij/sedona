@@ -1,4 +1,9 @@
 .nav-box {
   display: block;
   position: relative;
+
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+
+  }
 }

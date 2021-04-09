@@ -3,4 +3,8 @@
   line-height: 26px;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 458px;
+  }
 }

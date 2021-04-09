@@ -3,4 +3,9 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+
+  @media (min-width: $tablet-min-width) {
+    flex-flow: row;
+    justify-content: space-around;
+  }
 }

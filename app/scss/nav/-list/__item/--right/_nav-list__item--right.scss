@@ -1,0 +1,5 @@
+.nav-list__item--right {
+  @media (min-width: $tablet-min-width) {
+    order: 1;
+  }
+}

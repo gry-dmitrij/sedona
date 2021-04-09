@@ -4,4 +4,9 @@
   display: flex;
   flex-flow: column;
   position: relative;
+
+  @media (min-width: $tablet-min-width) {
+    flex-flow: row;
+    width: 100%;
+  }
 }

@@ -3,4 +3,8 @@
   padding: 0;
   display: flex;
   list-style: none;
+
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 0;
+  }
 }

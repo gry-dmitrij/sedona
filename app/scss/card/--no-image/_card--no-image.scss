@@ -18,4 +18,11 @@
   &:last-child::before{
     display: none;
   }
+
+  @media (min-width: $tablet-min-width) {
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
 }

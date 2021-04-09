@@ -6,4 +6,13 @@
     left: -47px;
     background-image: url("../img/icon/icon-gift.svg");
   }
+
+  @media (min-width: $tablet-min-width) {
+    &:before {
+      width: 64px;
+      height: 75px;
+      top: -100px;
+      left: calc(50% - 64px / 2);
+    }
+  }
 }

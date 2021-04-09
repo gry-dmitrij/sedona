@@ -1,4 +1,8 @@
 .hotel__desc {
   margin: 0 0 35px;
   color: #333;
+
+  @media (min-width: $tablet-min-width) {
+    max-width: 435px;
+  }
 }

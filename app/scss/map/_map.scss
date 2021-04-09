@@ -17,4 +17,8 @@
     border-radius: 50%;
     border: 5px solid #fff;
   }
+
+  @media (min-width: $tablet-min-width) {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+  }
 }
