@@ -1,0 +1,9 @@
+.nav-list__logo {
+  display: block;
+  width: 102px;
+  height: 83px;
+  @media (min-width: $desktop-min-width) {
+    width: 187px;
+    height: 96px;
+  }
+}

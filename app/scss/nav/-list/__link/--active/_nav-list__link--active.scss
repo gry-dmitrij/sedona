@@ -1,0 +1,11 @@
+.nav-list__link--active {
+  @media (min-width: $tablet-min-width) {
+    color: #766357;
+    &:hover {
+      color: #604e43;
+    }
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
+  }
+}
