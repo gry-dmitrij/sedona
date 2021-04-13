@@ -11,7 +11,8 @@
 
   @media (min-width: $tablet-min-width) {
     height: 3px;
-    width: 385px;
+    width: calc(100% - 383px);
+    max-width: 537px;
     bottom: 44px;
     left: 155px;
     border: none;

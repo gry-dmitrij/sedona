@@ -4,7 +4,8 @@
   height: 200px;
 
   @media (min-width: $tablet-min-width) {
-    width: 648px;
+    width: 100%;
+    max-width: 800px;
     height: 499px;
     object-fit: cover;
   }

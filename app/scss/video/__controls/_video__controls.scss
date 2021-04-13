@@ -8,7 +8,8 @@
   background-color: #e5e5e5;
 
   @media (min-width: $tablet-min-width) {
-    width: 648px;
+    width: calc(100% - 120px);
+    max-width: 800px;
     padding: 36px 41px 36px 34px;
     top: auto;
     bottom: 0;
