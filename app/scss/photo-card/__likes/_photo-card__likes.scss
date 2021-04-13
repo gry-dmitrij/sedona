@@ -1,0 +1,31 @@
+.photo-card__likes {
+  margin: 0;
+  padding: 0 0 0 37px;
+  position: relative;
+
+  background: none;
+  outline: none;
+  border: none;
+  &::before {
+    content: '';
+    display: block;
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    background: center url("../img/icon/icon-like.svg");
+    opacity: .3;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    padding: 0;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    grid-row: 2/4;
+    align-self: center;
+
+    font-weight: bold;
+  }
+}

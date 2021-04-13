@@ -1,0 +1,21 @@
+.video__slider {
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: 30px;
+  bottom: -4px;
+  border-radius: 50%;
+  background-color: #fff;
+
+  &:hover,
+  &:active {
+    //width: 12px;
+    //height: 12px;
+    //bottom: -5px;
+    //left: 29px;
+    transform: scale(1.1);
+  }
+}

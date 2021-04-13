@@ -1,0 +1,8 @@
+.banner--mini {
+  height: 158px;
+  padding-bottom: 18px;
+  background-position: bottom;
+  @media (min-width: $tablet-min-width) {
+    height: 290px;
+  }
+}

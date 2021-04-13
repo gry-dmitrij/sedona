@@ -1,0 +1,9 @@
+.banner__img--short {
+  width: 228px;
+  height: 39px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 457px;
+    height: 77px;
+  }
+}

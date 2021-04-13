@@ -1,0 +1,16 @@
+.message--bottom-triangle {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    left: 0;
+    background: center / 1200px 57px no-repeat url("../img/bg-triangle.svg");
+    bottom: -42px;
+    z-index: -1;
+    @media (min-width: $tablet-min-width) {
+      display: none;
+    }
+  }
+}

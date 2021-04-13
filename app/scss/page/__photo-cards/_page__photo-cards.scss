@@ -1,0 +1,6 @@
+.page__photo-cards {
+  margin: 27px 0 0;
+  @media (min-width: $tablet-min-width) {
+    margin-top: 68px;
+  }
+}

@@ -1,0 +1,56 @@
+.photo-card {
+  display: flex;
+  max-width: 320px;
+  padding: 21px 20px;
+  position: relative;
+
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  font-size: 14px;
+  line-height: 24px;
+
+  &:first-child::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 1px;
+
+    position: absolute;
+    top: 0;
+    left: calc(50% - 50vw);
+    background-color: #e5e5e5;
+
+    @media (min-width: $tablet-min-width) {
+      display: none;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50vw);
+    background-color: #e5e5e5;
+  }
+
+  @media (min-width: $tablet-min-width) {
+    display: -ms-grid;
+    display: grid;
+    width: 324px;
+    max-width: 100%;
+
+    padding: 0 0 5px;
+    -ms-grid-columns: 3fr 1fr;
+    grid-template-columns: 3fr 1fr;
+
+    background-color: #f2f2f2;
+    &:after {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.photo-cards {
+  display: flex;
+  padding: 0;
+
+  flex-flow: column;
+  align-items: center;
+  list-style: none;
+
+  @media (min-width: $tablet-min-width) {
+    width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow: row wrap;
+  }
+}

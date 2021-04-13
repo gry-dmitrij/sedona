@@ -32,6 +32,9 @@
 @import "map/**/!(*__*|*--*).scss";
 @import "map/**/*__!(*--*).scss";
 @import "map/**/+(*--*).scss";
+@import "message/**/!(*__*|*--*).scss";
+@import "message/**/*__!(*--*).scss";
+@import "message/**/+(*--*).scss";
 @import "nav/**/!(*__*|*--*).scss";
 @import "nav/**/*__!(*--*).scss";
 @import "nav/**/+(*--*).scss";
@@ -41,6 +44,13 @@
 @import "page/**/!(*__*|*--*).scss";
 @import "page/**/*__!(*--*).scss";
 @import "page/**/+(*--*).scss";
-@import "triangle-wrap/**/!(*__*|*--*).scss";
-@import "triangle-wrap/**/*__!(*--*).scss";
-@import "triangle-wrap/**/+(*--*).scss";
+@import "photo-cards/**/!(*__*|*--*).scss";
+@import "photo-cards/**/*__!(*--*).scss";
+@import "photo-cards/**/+(*--*).scss";
+@import "photo-card/**/!(*__*|*--*).scss";
+@import "photo-card/**/*__!(*--*).scss";
+@import "photo-card/**/+(*--*).scss";
+@import "video/**/!(*__*|*--*).scss";
+@import "video/**/*__!(*--*).scss";
+@import "video/**/+(*--*).scss";
+

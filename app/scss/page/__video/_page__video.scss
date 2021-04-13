@@ -1,0 +1,8 @@
+.page__video {
+  margin-bottom: 105px;
+  margin-top: 40px;
+  @media (min-width: $tablet-min-width) {
+    margin-top: 71px;
+    margin-bottom: 42px;
+  }
+}

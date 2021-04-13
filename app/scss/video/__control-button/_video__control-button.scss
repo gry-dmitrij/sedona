@@ -1,0 +1,36 @@
+.video__control-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: none;
+  outline: none;
+  & svg{
+    display: block;
+    fill: #5c6870;
+  }
+  &:hover {
+    svg{
+      fill: #333;
+    }
+  }
+  &:active {
+    svg {
+      fill: #333;
+      opacity: .3;
+    }
+  }
+
+  @media (min-width: $tablet-min-width) {
+    svg {
+      fill: #e5e5e5;
+      &:hover {
+        fill: rgba(229, 229, 229, .6);
+      }
+      &:active {
+        fill: rgba(229, 229, 229, .3);
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.message {
+  padding: 33px 0 0;
+  position: relative;
+  z-index: 1;
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+}

@@ -1,0 +1,11 @@
+.video__player {
+  display: block;
+  width: 320px;
+  height: 200px;
+
+  @media (min-width: $tablet-min-width) {
+    width: 648px;
+    height: 499px;
+    object-fit: cover;
+  }
+}

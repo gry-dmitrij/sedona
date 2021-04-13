@@ -1,0 +1,7 @@
+.message__caption--big {
+  @media (min-width: $tablet-min-width) {
+    margin-top: 37px;
+    margin-bottom: 32px;
+    font-size: 30px;
+  }
+}

@@ -6,6 +6,8 @@ const sass = require('gulp-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
 	cleancss = require('gulp-clean-css'),
 	concat = require('gulp-concat'),
+	svgSprite = require('gulp-svg-sprite'),
+	glob = require('glob'),
 	browserSync = require('browser-sync').create();
 
 // image
@@ -58,6 +60,46 @@ function images() {
 }
 
 exports.images = images;
+
+// создание svg спрайтов
+// Спрайты помещаются в inpDirectory
+// в отдельные папки. Название спрайта будет соответствовать
+// названию папки
+function createSvgSprite() {
+	// объект настроек
+	let inpDirectory = 'app/img_sprite/';
+	let outDirectory = 'app/img_src/sprites/';
+	let Config = function (name){
+		this.mode = {
+			"symbol": {
+				"dest": ".",
+				"sprite": name,
+			}
+		}
+	}
+	// читаем папки в inpDirectory
+	let array = glob.sync(inpDirectory + '*');
+	let stream = null;
+	for (let i = 0; i < array.length; i++) {
+		// пути к svg в каждой папке
+		let path = array[i] + '/**/*.svg';
+		// имя результирующего файла
+		let name = array[i].lastIndexOf('/');
+		name = array[i].substring(name + 1);
+		if (stream === null)
+			stream = src(path);
+		else
+			stream = stream.pipe(src(path));
+		// создаем новый конфиг
+		let config = new Config(name + '.svg');
+		// создаем спрайт
+		stream = stream.pipe(svgSprite(config));
+		stream = stream.pipe(dest(outDirectory));
+	}
+	return stream;
+}
+
+exports.svgSprite = createSvgSprite;
 
 function startwatch() {
 	// Мониторим файлы scss на изменения
