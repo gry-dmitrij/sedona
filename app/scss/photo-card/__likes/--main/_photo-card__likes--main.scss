@@ -1,5 +1,5 @@
 .photo-card__likes--main {
-  margin-right: 21px;
-  padding-left: 34px;
-  justify-self: end;
+  @media (min-width: $tablet-min-width) {
+    padding-left: 34px;
+  }
 }

@@ -1,0 +1,20 @@
+.photo-card__content-wrap {
+  display: flex;
+
+  padding: 17px 0 0;
+  flex-flow: column;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-min-width) {
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    flex-flow: wrap;
+  }
+  @media (min-width: $desktop-min-width) {
+    position: absolute;
+    bottom: 0;
+
+    background: rgba(0, 0, 0, .3);
+  }
+}

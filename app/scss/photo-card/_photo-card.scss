@@ -39,18 +39,18 @@
   }
 
   @media (min-width: $tablet-min-width) {
-    display: -ms-grid;
-    display: grid;
     width: 324px;
     max-width: 100%;
 
     padding: 0 0 5px;
-    -ms-grid-columns: 3fr 1fr;
-    grid-template-columns: 3fr 1fr;
 
     background-color: #f2f2f2;
     &:after {
       display: none;
     }
+  }
+  @media (min-width: $desktop-min-width) {
+    width: 400px;
+    padding-bottom: 0;
   }
 }

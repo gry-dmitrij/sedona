@@ -12,4 +12,7 @@
     margin-right: auto;
     flex-flow: row wrap;
   }
+  @media (min-width: $desktop-min-width) {
+    width: $desktop-min-width;
+  }
 }

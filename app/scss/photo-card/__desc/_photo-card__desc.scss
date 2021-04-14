@@ -1,11 +1,10 @@
 .photo-card__desc {
-  margin: 0 0 10px;
+  margin: 0;
+  padding: 0;
   display: block;
   color: #333333;
 
-  @media (min-width: $tablet-min-width) {
-    -ms-grid-row: 3;
-    grid-row: 3/4;
-    padding-left: 20px;
+  @media (min-width: $desktop-min-width) {
+    color: #ffffff;
   }
 }

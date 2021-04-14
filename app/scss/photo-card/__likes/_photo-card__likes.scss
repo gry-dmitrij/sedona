@@ -1,5 +1,5 @@
 .photo-card__likes {
-  margin: 0;
+  margin: 10px 0 0;
   padding: 0 0 0 37px;
   position: relative;
 
@@ -10,22 +10,26 @@
     content: '';
     display: block;
     width: 22px;
-    height: 21px;
+    height: 20px;
     position: absolute;
     left: 0;
-    top: -2px;
-    background: center url("../img/icon/icon-like.svg");
+    top: -4px;
+    background: center url("../img/icon/icon-like.svg#like-dark");
     opacity: .3;
   }
 
   @media (min-width: $tablet-min-width) {
-    padding: 0;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 3;
-    -ms-grid-column: 2;
-    grid-row: 2/4;
+    margin-top: 0;
+    padding-left: 33px;
     align-self: center;
-
     font-weight: bold;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    color: #ffffff;
+    &:before {
+      opacity: 1;
+      background-image: url("../img/icon/icon-like.svg#like-light");
+    }
   }
 }

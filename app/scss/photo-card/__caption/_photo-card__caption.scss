@@ -1,13 +1,12 @@
 .photo-card__caption {
-  margin: 17px 0 0;
+  margin: 0;
   padding: 0;
   color: #000000;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
-  @media (min-width: $tablet-min-width) {
-    -ms-grid-row: 2;
-    padding-left: 20px;
+  @media (min-width: $desktop-min-width) {
+    color: #ffffff;
   }
 }
