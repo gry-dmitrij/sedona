@@ -1,0 +1,33 @@
+.textarea {
+  height: 160px;
+  padding: 10px 15px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 4px solid #f2f2f2;
+  outline: none;
+
+  resize: none;
+
+  &:hover{
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+  &:focus{
+    border-color: #e5e5e5;
+    background-color: #fff;
+  }
+
+  &:-ms-input-placeholder{
+    color: rgba(0, 0, 0, .5);
+    font-weight: bold;
+  }
+  &::placeholder{
+    color: rgba(0, 0, 0, .5);
+    font-weight: bold;
+  }
+}

@@ -42,7 +42,82 @@
     <img src="img/sedona.svg" width="228" height="39" alt="Седона" class="banner__img banner__img--short">
   </section>
 </header>
-<main></main>
+<main>
+  <section>
+    <div class="message message--top-triangle">
+      <b class="message__caption message__caption--big page__photo-caption">Оставьте свой отзыв</b>
+      <p class="message__desc message__desc--lh-mini message__desc--wide">Помогите нашим отелям стать лучше! оставьте
+        отзыв о них, а также о
+        посещенных вами достопримечательностях
+      </p>
+    </div>
+    <form action="https://echo.htmlacademy.ru" class="form page__form">
+      <fieldset class="form__card">
+
+        <legend class="form__caption">Представьтесь:</legend>
+        <div class="form__fieldset-wrap">
+          <div class="form__edit-wrap">
+            <label for="name" class="form__label">Имя*:</label>
+            <input type="text" id="name" class="edit form__edit" placeholder="Петр">
+          </div>
+          <div class="form__edit-wrap">
+            <label for="surname" class="form__label">Фамилия*:</label>
+            <input type="text" id="surname" class="edit form__edit" placeholder="Иванов">
+          </div>
+          <div class="form__edit-wrap">
+            <label for="patronymic" class="form__label">Отчество:</label>
+            <input type="text" id="patronymic" class="edit form__edit" placeholder="Александрович">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form__card">
+        <legend class="form__caption">Контактная информация:</legend>
+        <div class="form__fieldset-wrap form__fieldset-wrap--padding-mini">
+          <div class="form__edit-wrap form__edit-wrap--direction-column">
+            <label for="phone" class="form__label form__label--wide">Контактный телефон*:</label>
+            <input type="tel" id="phone" class="edit" placeholder="Введите телефон">
+          </div>
+          <div class="form__edit-wrap form__edit-wrap--direction-column">
+            <label for="email" class="form__label form__label--wide">Электронная почта*:</label>
+            <input type="email" id="email" class="edit" placeholder="Введите e-mail">
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form__card">
+        <legend class="form__caption">Ваше общее впечатление:</legend>
+        <div class="form__fieldset-wrap">
+          <input type="radio" name="opinion" id="positive-opinion" class="visually-hidden" checked>
+          <label for="positive-opinion" class="radio-lbl form__radio">Скорее положительное</label>
+          <input type="radio" name="opinion" id="negative-opinion" class="visually-hidden">
+          <label for="negative-opinion" class="radio-lbl  form__radio">Скорее отрицательное</label>
+          <input type="radio" name="opinion" id="neutral-opinion" class="visually-hidden">
+          <label for="neutral-opinion" class="radio-lbl form__radio">Затрудняюсь ответить</label>
+        </div>
+      </fieldset>
+      <fieldset class="form__card">
+        <legend class="form__caption">Посещенные достопримечательности:</legend>
+        <div class="form__fieldset-wrap form__fieldset-wrap--padding-micro">
+          <input type="checkbox" id="devil-bridge" class="visually-hidden">
+          <label for="devil-bridge" class="checkbox-lbl form__checkbox">Мост Дьявола</label>
+          <input type="checkbox" id="bell-mountain" class="visually-hidden">
+          <label for="bell-mountain" class="checkbox-lbl form__checkbox">Гора-Колокол</label>
+          <input type="checkbox" id="slide-park" class="visually-hidden">
+          <label for="slide-park" class="checkbox-lbl form__checkbox">Слайд-парк</label>
+          <input type="checkbox" id="red-rocks" class="visually-hidden">
+          <label for="red-rocks" class="checkbox-lbl form__checkbox">Красные скалы</label>
+        </div>
+      </fieldset>
+      <fieldset class="form__card">
+        <legend class="form__caption">Опишите свои эмоции:</legend>
+        <div class="form__fieldset-wrap form__fieldset-wrap--padding-micro">
+          <textarea name="emotion" id="emotion" cols="25" rows="8"
+                   class="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+      </fieldset>
+      <button class="button button--big form__button">Отправить отзыв</button>
+    </form>
+  </section>
+</main>
 <footer class="footer">
   <p class="footer__hashtag">#visitsedona</p>
   <ul class="footer__icons">
