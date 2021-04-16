@@ -5,5 +5,8 @@
   position: relative;
   border: none;
 
-
+  @media (min-width: $tablet-min-width) {
+    margin-top: 0;
+    margin-bottom: 65px;
+  }
 }

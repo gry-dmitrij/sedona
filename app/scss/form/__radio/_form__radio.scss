@@ -3,4 +3,8 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-min-width) {
+    margin-bottom: 25px;
+  }
 }

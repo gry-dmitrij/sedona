@@ -1,4 +1,10 @@
 .page__form {
   margin-top: 37px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-min-width) {
+    margin-top: 75px;
+    margin-bottom: 60px;
+    padding: 0 57px;
+  }
 }

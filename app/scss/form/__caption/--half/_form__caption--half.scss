@@ -1,0 +1,5 @@
+.form__caption--half {
+    @media (min-width: $tablet-min-width) {
+      text-align: left;
+    }
+}

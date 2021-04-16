@@ -1,2 +1,10 @@
 .form {
+  display: block;
+  @media (min-width: $tablet-min-width) {
+    display: flex;
+
+    flex-flow: wrap;
+    justify-content: space-between;
+
+  }
 }

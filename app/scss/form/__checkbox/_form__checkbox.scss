@@ -3,4 +3,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-min-width) {
+    width: 228px;
+    margin-left: 32px;
+    margin-top: 33px;
+    margin-bottom: 0;
+  }
 }

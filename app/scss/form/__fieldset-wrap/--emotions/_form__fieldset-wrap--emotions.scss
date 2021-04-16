@@ -1,0 +1,8 @@
+.form__fieldset-wrap--emotions {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-min-width) {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+}

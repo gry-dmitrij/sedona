@@ -1,0 +1,13 @@
+.form__comment {
+  display: none;
+
+  @media (min-width: $tablet-min-width) {
+    display: block;
+
+    align-self: center;
+
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}

@@ -52,10 +52,10 @@
       </p>
     </div>
     <form action="https://echo.htmlacademy.ru" class="form page__form">
-      <fieldset class="form__card">
+      <fieldset class="form__card form__card--width-half">
 
-        <legend class="form__caption">Представьтесь:</legend>
-        <div class="form__fieldset-wrap">
+        <legend class="form__caption form__caption--half">Представьтесь:</legend>
+        <div class="form__fieldset-wrap form__fieldset-wrap--pos-right">
           <div class="form__edit-wrap">
             <label for="name" class="form__label">Имя*:</label>
             <input type="text" id="name" class="edit form__edit" placeholder="Петр">
@@ -70,22 +70,22 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="form__card">
-        <legend class="form__caption">Контактная информация:</legend>
-        <div class="form__fieldset-wrap form__fieldset-wrap--padding-mini">
+      <fieldset class="form__card form__card--width-full">
+        <legend class="form__caption form__caption--full">Контактная информация:</legend>
+        <div class="form__fieldset-wrap form__fieldset-wrap--contacts">
           <div class="form__edit-wrap form__edit-wrap--direction-column">
             <label for="phone" class="form__label form__label--wide">Контактный телефон*:</label>
-            <input type="tel" id="phone" class="edit" placeholder="Введите телефон">
+            <input type="tel" id="phone" class="edit form__contact-edit" placeholder="Введите телефон">
           </div>
           <div class="form__edit-wrap form__edit-wrap--direction-column">
             <label for="email" class="form__label form__label--wide">Электронная почта*:</label>
-            <input type="email" id="email" class="edit" placeholder="Введите e-mail">
+            <input type="email" id="email" class="edit form__contact-edit" placeholder="Введите e-mail">
           </div>
         </div>
       </fieldset>
-      <fieldset class="form__card">
-        <legend class="form__caption">Ваше общее впечатление:</legend>
-        <div class="form__fieldset-wrap">
+      <fieldset class="form__card form__card--opinion form__card--width-half">
+        <legend class="form__caption form__caption--half">Ваше общее впечатление:</legend>
+        <div class="form__fieldset-wrap form__fieldset-wrap--width-half">
           <input type="radio" name="opinion" id="positive-opinion" class="visually-hidden" checked>
           <label for="positive-opinion" class="radio-lbl form__radio">Скорее положительное</label>
           <input type="radio" name="opinion" id="negative-opinion" class="visually-hidden">
@@ -94,9 +94,9 @@
           <label for="neutral-opinion" class="radio-lbl form__radio">Затрудняюсь ответить</label>
         </div>
       </fieldset>
-      <fieldset class="form__card">
-        <legend class="form__caption">Посещенные достопримечательности:</legend>
-        <div class="form__fieldset-wrap form__fieldset-wrap--padding-micro">
+      <fieldset class="form__card form__card--width-full">
+        <legend class="form__caption form__caption--full">Посещенные достопримечательности:</legend>
+        <div class="form__fieldset-wrap form__fieldset-wrap--attractions">
           <input type="checkbox" id="devil-bridge" class="visually-hidden">
           <label for="devil-bridge" class="checkbox-lbl form__checkbox">Мост Дьявола</label>
           <input type="checkbox" id="bell-mountain" class="visually-hidden">
@@ -107,14 +107,15 @@
           <label for="red-rocks" class="checkbox-lbl form__checkbox">Красные скалы</label>
         </div>
       </fieldset>
-      <fieldset class="form__card">
-        <legend class="form__caption">Опишите свои эмоции:</legend>
-        <div class="form__fieldset-wrap form__fieldset-wrap--padding-micro">
+      <fieldset class="form__card form__card--width-full">
+        <legend class="form__caption form__caption--full">Опишите свои эмоции:</legend>
+        <div class="form__fieldset-wrap form__fieldset-wrap--emotions">
           <textarea name="emotion" id="emotion" cols="25" rows="8"
                    class="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
       </fieldset>
       <button class="button button--big form__button">Отправить отзыв</button>
+      <span class="form__comment">* — обязательные поля</span>
     </form>
   </section>
 </main>

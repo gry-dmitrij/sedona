@@ -1,0 +1,9 @@
+.form__fieldset-wrap--attractions {
+  padding-top: 15px;
+  @media (min-width: $tablet-min-width) {
+    padding-top: 7px;
+    padding-bottom: 22px;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}

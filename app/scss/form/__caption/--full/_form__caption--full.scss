@@ -1,0 +1,6 @@
+.form__caption--full {
+    @media (min-width: $tablet-min-width) {
+      max-width: 500px;
+      padding: 0 63px;
+    }
+}
