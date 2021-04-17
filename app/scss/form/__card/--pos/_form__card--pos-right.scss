@@ -2,4 +2,7 @@
     @media (min-width: $tablet-min-width) {
       padding-left: 57px;
     }
+  @media (min-width: $desktop-min-width) {
+    padding-left: 80px;
+  }
 }

@@ -1,0 +1,5 @@
+.no-desktop {
+    @media (min-width: $desktop-min-width) {
+      display: none;
+    }
+}

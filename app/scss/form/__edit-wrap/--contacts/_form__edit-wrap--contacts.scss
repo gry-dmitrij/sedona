@@ -1,0 +1,16 @@
+.form__edit-wrap--contacts {
+  margin-bottom: 15px;
+  flex-flow: column;
+  align-items: stretch;
+
+  @media (min-width: $desktop-min-width) {
+    width: 50%;
+    margin-bottom: 0;
+    position: relative;
+    flex-flow: row wrap;
+    align-items: center;
+    &:nth-child(2n+1){
+      padding-right: 80px;
+    }
+  }
+}

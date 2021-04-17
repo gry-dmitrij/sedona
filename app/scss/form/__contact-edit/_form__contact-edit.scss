@@ -2,4 +2,8 @@
   @media (min-width: $tablet-min-width) {
     margin-bottom: 10px;
   }
+
+  @media (min-width: $desktop-min-width) {
+    flex: 1;
+  }
 }

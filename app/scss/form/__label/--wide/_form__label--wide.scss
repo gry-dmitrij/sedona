@@ -1,4 +1,9 @@
 .form__label--wide {
   padding: 0 0 0 23px;
   margin-bottom: 8px;
+
+  @media (min-width: $desktop-min-width) {
+    padding-left: 0;
+    position: static;
+  }
 }
