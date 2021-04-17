@@ -1,0 +1,5 @@
+.form__label--icon-email {
+  &::after {
+    background-image: url("../img/icon/icon-mail.svg");
+  }
+}

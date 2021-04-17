@@ -1,0 +1,16 @@
+.form__label--icon {
+  position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 54px;
+      height: 54px;
+      position: absolute;
+      top: calc(100% + 8px);
+      right: -14px;
+      background-color: #e6e6e6;
+      background-position: center;
+      background-size: 18px;
+      background-repeat: no-repeat;
+    }
+}

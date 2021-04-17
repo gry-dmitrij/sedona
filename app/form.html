@@ -52,10 +52,10 @@
       </p>
     </div>
     <form action="https://echo.htmlacademy.ru" class="form page__form">
-      <fieldset class="form__card form__card--width-half">
+      <fieldset class="form__card form__card--width-half form__card--pos-right">
 
         <legend class="form__caption form__caption--half">Представьтесь:</legend>
-        <div class="form__fieldset-wrap form__fieldset-wrap--pos-right">
+        <div class="form__fieldset-wrap">
           <div class="form__edit-wrap">
             <label for="name" class="form__label">Имя*:</label>
             <input type="text" id="name" class="edit form__edit" placeholder="Петр">
@@ -74,11 +74,13 @@
         <legend class="form__caption form__caption--full">Контактная информация:</legend>
         <div class="form__fieldset-wrap form__fieldset-wrap--contacts">
           <div class="form__edit-wrap form__edit-wrap--direction-column">
-            <label for="phone" class="form__label form__label--wide">Контактный телефон*:</label>
+            <label for="phone" class="form__label form__label--wide form__label--icon form__label--icon-phone">Контактный телефон*:</label>
+            <!-- TODO: Добавить иконку на input-->
             <input type="tel" id="phone" class="edit form__contact-edit" placeholder="Введите телефон">
           </div>
           <div class="form__edit-wrap form__edit-wrap--direction-column">
-            <label for="email" class="form__label form__label--wide">Электронная почта*:</label>
+            <label for="email" class="form__label form__label--wide form__label--icon form__label--icon-email">Электронная почта*:</label>
+            <!-- TODO: Добавить иконку на input-->
             <input type="email" id="email" class="edit form__contact-edit" placeholder="Введите e-mail">
           </div>
         </div>
