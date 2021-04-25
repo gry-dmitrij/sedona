@@ -5,8 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Sedona</title>
+  <script src="js/polyfill.js" defer></script>
+  <script src="js/no-js.js" defer></script>
+  <script src="js/navigation.js" defer></script>
 </head>
-<body class="page">
+<body class="page no-js">
 <header class="main-header">
   <nav class="nav-box">
     <ul class="nav-list">
@@ -99,7 +102,7 @@
     <h2 class="visually-hidden">Гостиницы</h2>
     <b class="hotel__caption">ЗАИНТЕРЕСОВАЛИСЬ?</b>
     <p class="hotel__desc">Укажите предполагаемые даты поездки,<br class="no-mobile"> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-    <button class="button button--big">найти гостиницу</button>
+    <a id="search-hotel" href="#" class="button button--big">найти гостиницу</a>
   </section>
   <section class="map">
     <h2 class="visually-hidden">Карта</h2>
@@ -121,5 +124,10 @@
   <a href="#" class="footer__developer">Разработано</a>
 </footer>
 <!--TODO: Добавить всплывающие окна на все страницы-->
+<section class="hotel-search visually-hidden">
+  <p>Здесь будет блок поиска гостиниц</p>
+  <button id="close-search-hotel" class="button-icon button-icon--mini-close-btn hotel-search__close-btn"></button>
+</section>
+<script src="js/index.js"></script>
 </body>
 </html>

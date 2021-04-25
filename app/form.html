@@ -7,6 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
+  <script src="js/polyfill.js" defer></script>
+  <script src="js/no-js.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/form.js"></script>
 </head>
 <body class="page">
 <header class="main-header">
@@ -51,22 +55,21 @@
         посещенных вами достопримечательностях
       </p>
     </div>
-    <form action="https://echo.htmlacademy.ru" class="form page__form">
+    <form action="https://echo.htmlacademy.ru" method="post" class="form page__form">
       <fieldset class="form__card form__card--width-half form__card--pos-right">
-
         <legend class="form__caption form__caption--half">Представьтесь:</legend>
         <div class="form__fieldset-wrap">
           <div class="form__edit-wrap">
             <label for="name" class="form__label">Имя*:</label>
-            <input type="text" id="name" class="edit form__edit" placeholder="Петр">
+            <input type="text" id="name" name="name" class="edit form__edit" placeholder="Петр" required>
           </div>
           <div class="form__edit-wrap">
             <label for="surname" class="form__label">Фамилия*:</label>
-            <input type="text" id="surname" class="edit form__edit" placeholder="Иванов">
+            <input type="text" id="surname" name="surname" class="edit form__edit" placeholder="Иванов" required>
           </div>
           <div class="form__edit-wrap">
             <label for="patronymic" class="form__label">Отчество:</label>
-            <input type="text" id="patronymic" class="edit form__edit" placeholder="Александрович">
+            <input type="text" id="patronymic" name="patronymic" class="edit form__edit" placeholder="Александрович">
           </div>
         </div>
       </fieldset>
@@ -78,36 +81,37 @@
               <span class="no-desktop">Контактный</span> телефон*:
             </label>
             <!-- TODO: Добавить иконку на input-->
-            <input type="tel" id="phone" class="edit form__contact-edit" placeholder="Введите телефон">
+            <input type="tel" id="phone" name="phone" class="edit form__contact-edit" placeholder="Введите телефон" required>
           </div>
           <div class="form__edit-wrap form__edit-wrap--contacts">
-            <label for="email" class="form__label form__label--wide form__label--icon form__label--icon-email">Электронная почта*:</label>
+            <label for="email" class="form__label form__label--wide form__label--icon form__label--icon-email">Электронная
+              почта*:</label>
             <!-- TODO: Добавить иконку на input-->
-            <input type="email" id="email" class="edit form__contact-edit" placeholder="Введите e-mail">
+            <input type="email" id="email" name="email" class="edit form__contact-edit" placeholder="Введите e-mail" required>
           </div>
         </div>
       </fieldset>
       <fieldset class="form__card form__card--opinion form__card--width-half">
         <legend class="form__caption form__caption--half form__caption--checkbox">Ваше общее впечатление:</legend>
         <div class="form__fieldset-wrap form__fieldset-wrap--width-half">
-          <input type="radio" name="opinion" id="positive-opinion" class="visually-hidden" checked>
+          <input type="radio" name="opinion" value="positive" id="positive-opinion" class="visually-hidden" checked>
           <label for="positive-opinion" class="radio-lbl form__radio">Скорее положительное</label>
-          <input type="radio" name="opinion" id="negative-opinion" class="visually-hidden">
+          <input type="radio" name="opinion" value="negative" id="negative-opinion" class="visually-hidden">
           <label for="negative-opinion" class="radio-lbl  form__radio">Скорее отрицательное</label>
-          <input type="radio" name="opinion" id="neutral-opinion" class="visually-hidden">
+          <input type="radio" name="opinion" value="neutral" id="neutral-opinion" class="visually-hidden">
           <label for="neutral-opinion" class="radio-lbl form__radio">Затрудняюсь ответить</label>
         </div>
       </fieldset>
       <fieldset class="form__card form__card--width-full">
         <legend class="form__caption form__caption--full">Посещенные достопримечательности:</legend>
         <div class="form__fieldset-wrap form__fieldset-wrap--attractions">
-          <input type="checkbox" id="devil-bridge" class="visually-hidden">
+          <input type="checkbox" id="devil-bridge" name="devil-bridge" class="visually-hidden">
           <label for="devil-bridge" class="checkbox-lbl form__checkbox">Мост Дьявола</label>
-          <input type="checkbox" id="bell-mountain" class="visually-hidden">
+          <input type="checkbox" id="bell-mountain" name="bell-mountain" class="visually-hidden">
           <label for="bell-mountain" class="checkbox-lbl form__checkbox">Гора-Колокол</label>
-          <input type="checkbox" id="slide-park" class="visually-hidden">
+          <input type="checkbox" id="slide-park" name="slide-park" class="visually-hidden">
           <label for="slide-park" class="checkbox-lbl form__checkbox">Слайд-парк</label>
-          <input type="checkbox" id="red-rocks" class="visually-hidden">
+          <input type="checkbox" id="red-rocks" name="red-rocks" class="visually-hidden">
           <label for="red-rocks" class="checkbox-lbl form__checkbox">Красные скалы</label>
         </div>
       </fieldset>
@@ -115,7 +119,7 @@
         <legend class="form__caption form__caption--full">Опишите свои эмоции:</legend>
         <div class="form__fieldset-wrap form__fieldset-wrap--emotions">
           <textarea name="emotion" id="emotion" cols="25" rows="8"
-                   class="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+                    class="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
       </fieldset>
       <button class="button button--big form__button">Отправить отзыв</button>
@@ -138,5 +142,27 @@
   </ul>
   <a href="#" class="footer__developer">Разработано</a>
 </footer>
+<section class="popup-box popup-box--hide">
+  <div class="popup popup--success">
+    <div class="popup__content-box">
+      <b class="popup__caption">Ваш отзыв отправлен!</b>
+      <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+        <br>В ближайшее время мы опубликуем его
+        на сайте.</p>
+    </div>
+    <div class="popup__button-box">
+      <button class="button popup__button">Закрыть окно</button>
+    </div>
+  </div>
+</section>
+<section class="popup-box popup-box--hide">
+  <div class="popup popup--fail">
+    <div class="popup__content-box">
+      <b class="popup__caption">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+      <p class="popup__text popup__text--fail">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button popup__button">Закрыть окно</button>
+    </div>
+  </div>
+</section>
 </body>
 </html>

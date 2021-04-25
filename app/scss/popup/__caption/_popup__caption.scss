@@ -1,0 +1,14 @@
+.popup__caption {
+  margin-bottom: 27px;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: $tablet-min-width) {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

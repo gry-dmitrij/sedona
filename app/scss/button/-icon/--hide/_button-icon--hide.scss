@@ -1,0 +1,5 @@
+.button-icon--hide {
+    @media (max-width: $tablet-min-width - 1px) {
+      display: none;
+    }
+}

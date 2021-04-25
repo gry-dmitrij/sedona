@@ -1,0 +1,8 @@
+.popup__button {
+  max-width: 460px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  @media (min-width: $tablet-min-width) {
+    font-size: 21px;
+  }
+}

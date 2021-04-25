@@ -5,4 +5,8 @@
   border: none;
   outline: none;
   background-color: transparent;
+
+  .no-js & {
+    display: none;
+  }
 }

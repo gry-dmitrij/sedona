@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
+  <script src="js/polyfill.js" defer></script>
+  <script src="js/no-js.js" defer></script>
+  <script src="js/navigation.js" defer></script>
 </head>
 <body class="page">
 <header class="main-header">
@@ -79,12 +82,13 @@
                   media="(min-width: 1200px)">
           <img src="img/photo/photo-2-mobile@1x.jpg" alt="Местная растительность" class="photo-card__img">
         </picture>
-        <span class="photo-card__content-wrap">
+        <div class="photo-card__content-wrap">
           <div class="photo-card__text-wrap">
             <h2 class="photo-card__caption">Местная растительность</h2>
             <span class="photo-card__desc">Автор фото: Сергей</span>
           </div>
-          <button class="photo-card__likes">143</button></span>
+          <button class="photo-card__likes">143</button>
+        </div>
       </li>
       <li class="photo-card">
         <picture class="photo-card__img">

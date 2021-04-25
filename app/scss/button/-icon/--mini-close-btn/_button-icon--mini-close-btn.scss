@@ -1,0 +1,35 @@
+.button-icon--mini-close-btn {
+  width: 14px;
+  height: 14px;
+  display: block;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 7px;
+    left: 0;
+    background-color: #444;
+  }
+  &::before{
+    transform: rotate(45deg);
+  }
+  &::after{
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      background-color: #111;
+    }
+  }
+  &:active {
+    &::after,
+    &::before {
+      background-color: #999;
+    }
+  }
+}
